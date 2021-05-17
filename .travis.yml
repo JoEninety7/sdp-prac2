@@ -1,11 +1,12 @@
 language: csharp
+solution: oware.sln
 mono: none
+os: 
+  - osx
+  - linux
 dist: focal
 dotnet: 2.2.101
-
 install:
 - dotnet restore
-
 script:
  - dotnet build
- - dotnet test Tests/DataImporter.Tests/DataImporter.Tests.csproj
